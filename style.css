@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #422111;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nomeLoja {
+  font-size: 24px;
+  font-weight: bold;  
+  padding: 0 50px;
+}
+
+.opcoes {
+  display: flex;
+  padding: 0 50px;
+  font-weight: bold;
+}
+
+.opcoes a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+h2 {
+  padding: 0 50px 0;
+}
+
+.horizontal-line {
+  border-top: 2px solid #422111;
+  margin-bottom: 0;
+}
+
+.sobre {
+  padding: 0 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sobre img {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+}
+
+.sobre p {
+  margin-left: 40px;
+  text-align: justify;
+  font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .opcoes {
+    margin-top: 10px;
+  }
+
+  #a2 {
+    margin-left: 20px;
+  }
+
+  .opcoes a {
+    margin-left: 0;
+    display: block;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sobre {
+    flex-direction: column;
+    padding: 0 40px;
+    display: flex;
+  }
+
+
+  .sobre img {
+    width: 100%;
+    max-width: none;
+  }
+
+  .sobre p {
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+}
+
+    /* Seção de Produtos */
+    .divProdutos {
+      padding: 0 50px 0;
+    }
+
+    .horizontal-line {
+      border-top: 2px solid #422111;
+      margin-bottom: 20px;
+    }
+
+    .produtos {
+      padding: 0 50px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .produto {
+      width: 23%;
+      padding: 20px;
+      margin-bottom: 40px;
+      text-align: center;
+      background-color: #422111;
+      color: #fff;
+    }
+
+    .produto img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .produto h3 {
+      margin-bottom: 10px;
+    }
+
+    .produto p {
+      margin-bottom: 20px;
+    }
+
+    .tamanhos {
+      font-size: 12px;
+    
+    }
+
+    .produto button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      .produto {
+        width: 48%;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .produto {
+        width: 100%;
+      }
+    }
